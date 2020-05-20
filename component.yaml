@@ -10,6 +10,7 @@ inputs:
   description: SSH private key in RSA format
 outputs:
 - key: "SSH_AUTH_SOCK"
+  title: SSH Auth Sock
   defaultValue: "SSH_AUTH_SOCK"
   description: The path of the SSH Auth Socket.
   helpText:
