@@ -21,6 +21,7 @@ ssh-add ~/.ssh/appcircle_ssh
 ssh-keyscan github.com >> ~/.ssh/known_hosts
 ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
 ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+ssh-keyscan ssh.dev.azure.com >> ~/.ssh/known_hosts
 
 echo "Exporting SSH_AUTH_SOCK=$SSH_AUTH_SOCK"
 echo "SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> $AC_ENV_FILE_PATH
