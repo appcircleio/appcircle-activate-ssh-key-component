@@ -17,11 +17,7 @@ eval $(ssh-agent)
 
 echo "Add the SSH private key to the ssh-agent"
 ssh-add ~/.ssh/appcircle_ssh
-
-ssh-keyscan github.com >> ~/.ssh/known_hosts
-ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
-ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
-ssh-keyscan ssh.dev.azure.com >> ~/.ssh/known_hosts
-
+echo -e "Host *\n    StrictHostKeyChecking no" >> ~/.ssh/config
+chmod 400 ~/.ssh/config
 echo "Exporting SSH_AUTH_SOCK=$SSH_AUTH_SOCK"
 echo "SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> $AC_ENV_FILE_PATH
