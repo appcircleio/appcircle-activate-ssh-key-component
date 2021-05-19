@@ -1,4 +1,4 @@
-# Appcircle Activate SSH Key
+# Appcircle Activate SSH Private Key
 
 This step sets up your SSH key in the build machine if you used one to connect your repository. This allows the build machine to connect to your private repository using your SSH key.
 
