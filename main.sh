@@ -8,6 +8,7 @@ exit 0
 fi
 
 echo "Create a file to save the RSA SSH private key"
+rm -rf ~/.ssh
 mkdir -p ~/.ssh
 echo "$AC_REPOSITORY_SSH_KEY" >> ~/.ssh/appcircle_ssh
 chmod 600 ~/.ssh/appcircle_ssh
