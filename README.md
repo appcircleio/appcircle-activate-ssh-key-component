@@ -2,7 +2,9 @@
 
 This step sets up your SSH key in the build machine if you used one to connect your repository. This allows the build machine to connect to your private repository using your SSH key.
 
-## Required Input Variables
+## Input Variables
+
+### Required
 
 - `AC_REPOSITORY_SSH_KEY`: SSH private key in RSA format.
 
@@ -10,14 +12,19 @@ This step sets up your SSH key in the build machine if you used one to connect y
 
 - `SSH_AUTH_SOCK`: SSH Auth Sock. The path of the SSH Auth Socket.
 
-## Required Steps
+## Relationship
 
-- There is no required step that needs to be run afterward for this step to work as expected.
+Below workflow steps are related with this step and should be used as recommended.
 
-## Preceding Steps
+### Required Steps
 
-- There is no preceding step advised to be run beforehand for this step to work as expected.
+There is no required step that needs to be run beforehand for this step to work as expected.
 
-## Following Steps
+### Preceding Steps
 
--  Git Clone
+There is no preceding step advised to be run beforehand for this step to work as expected.
+
+### Following Steps
+
+Below are the steps that should be run afterwards if they are used in the workflow with this step.
+- [Appcircle Git Clone](https://github.com/appcircleio/appcircle-git-clone-component.git)
