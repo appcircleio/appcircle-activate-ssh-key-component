@@ -10,7 +10,7 @@ This step sets up your SSH key in the build machine if you used one to connect y
 
 ## Output Variables
 
-- `SSH_AUTH_SOCK`: SSH Auth Sock. The path of the SSH Auth Socket.
+- `SSH_AUTH_SOCK`: It contains the path of the unix file socket that the SSH agent uses for communication with other processes.
 
 ## Relationship
 
@@ -27,4 +27,5 @@ There is no preceding step advised to be run beforehand for this step to work as
 ### Following Steps
 
 Below are the steps that should be run afterwards if they are used in the workflow with this step.
+
 - [Appcircle Git Clone](https://github.com/appcircleio/appcircle-git-clone-component.git)
