@@ -1,4 +1,6 @@
 #!/bin/bash
+# Sourcing (e.g. from tests) loads the file without running the step.
+[[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 0
 set -e
 
 if [ -z "$AC_REPOSITORY_SSH_KEY" ]
