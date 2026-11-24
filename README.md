@@ -29,3 +29,11 @@ There is no preceding step advised to be run beforehand for this step to work as
 Below are the steps that should be run afterwards if they are used in the workflow with this step.
 
 - [Appcircle Git Clone](https://github.com/appcircleio/appcircle-git-clone-component.git)
+
+## Running tests
+
+Requires [bats-core](https://github.com/bats-core/bats-core) (`brew install bats-core` or `npm install -g bats`). The tests run `main.sh` with a temporary `HOME` and stub `ssh-agent` / `ssh-add`, so your own `~/.ssh` and the real SSH tools are never touched.
+
+```bash
+bats test/
+```
